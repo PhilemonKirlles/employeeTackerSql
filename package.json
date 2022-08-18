@@ -1,9 +1,36 @@
 {
-  
+  "name": "employeetackersql",
+  "description": "A content management node.js application in order to keep track of a company's structure.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilemonKirlles/employeeTackerSql.git"
+  },
+  "keywords": [
+    "CMS",
+    "Node",
+    "MYSQL",
+    "mysql2",
+    "inquirer",
+    "employee tacker",
+    "employee database"
+  ],
+  "author": "Philemon AbdEllah Kirlles",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PhilemonKirlles/employeeTackerSql/issues"
+  },
+  "homepage": "https://github.com/PhilemonKirlles/employeeTackerSql#readme",
   "dependencies": {
     "console.table": "^0.10.0",
-    "dotenv": "^16.0.1",
-    "inquirer": "^9.1.0",
-    "mysql2": "^2.3.3"
+    "dotenv": "^9.0.0",
+    "inquirer": "^8.0.0",
+    "mysql2": "^2.2.5"
   }
 }
