@@ -1,8 +1,14 @@
-const mysql = require('mysql2')
-const connection = require('./config/connection');
+const mysql = require('mysql');
 const inquirer = require('inquirer');
-const cTable = require('console.table');
-const { handlers } = require("./lib");
+const consoleTable = require('console.table');
+const db = require('./db/connection');
+const { handlers } = require("./lib/");
+
+db.connect(err => {
+  if (err) throw err;
+  console.log('Database connected.');
+  employeeTracker();
+});
 
 const initializeApp = async () => {
   const openingChoices = [

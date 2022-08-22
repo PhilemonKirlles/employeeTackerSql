@@ -1,8 +1,12 @@
+-- Insert into departments table
+
 INSERT INTO departments (name)
 VALUES 
 ("Administration"),
 ("Finance"),
 ("Educators");
+
+-- Insert into role table
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
@@ -22,6 +26,7 @@ VALUES
 ("Operation manager", 90000, 3);
 
 
+-- Insert into employee table
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id, is_manager)
 VALUES 
