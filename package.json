@@ -2,11 +2,11 @@
   "name": "employeetackersql",
   "description": "A content management node.js application in order to keep track of a company's structure.",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js "
+    "start": "node server.js ",
+    "seed": "node db/seeds.sql"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,9 @@
   "homepage": "https://github.com/PhilemonKirlles/employeeTackerSql#readme",
   "dependencies": {
     "console.table": "^0.10.0",
-    "dotenv": "^9.0.0",
-    "inquirer": "^8.0.0",
-    "mysql2": "^2.2.5"
+    "dotenv": "^9.0.2",
+    "inquirer": "^8.2.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
   }
 }

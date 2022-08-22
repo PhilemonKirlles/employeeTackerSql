@@ -1,6 +1,8 @@
-const cTable = require("console.table")
-const inquirer = require("inquirer")
-const { handlers } = require("./lib")
+const mysql = require('mysql2')
+const connection = require('./config/connection');
+const inquirer = require('inquirer');
+const cTable = require('console.table');
+const { handlers } = require("./lib");
 
 const initializeApp = async () => {
   const openingChoices = [
@@ -22,7 +24,6 @@ const initializeApp = async () => {
     name: "opening",
     message: "What would you like to do?",
     choices: openingChoices,
-    pageSize: 5,
   })
   switch (answers.opening) {
     case openingChoices[0]:
@@ -72,7 +73,7 @@ const initializeApp = async () => {
     case openingChoices[11]:
       await handlers.delete.employee()
       break
-  }
+  };
 
   return initializeApp()
 }
