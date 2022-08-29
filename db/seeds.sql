@@ -1,4 +1,4 @@
-INSERT INTO departments (name)
+INSERT INTO departments(name)
 VALUES 
 ("Administration"),
 ("Finance"),
@@ -39,6 +39,7 @@ VALUES
 ("Steve", "Holt", 12, 1, 1),
 ("Lucille", "Austero", 13, 1, 0),
 ("Tobias", "Funke", 14, 1, 1);
+
 -- Credit: character from Arrested Development a sitcom by Mitchell Hurwitz, 2003
 
 

@@ -70,9 +70,9 @@ const initializeApp = async () => {
       await handlers.delete.role()
       break
 
-    // case openingChoices[11]:
-    //   await handlers.delete.employee()
-    //   break
+    case openingChoices[11]:
+      await handlers.delete.employee()
+      break
   };
 
   return initializeApp()
